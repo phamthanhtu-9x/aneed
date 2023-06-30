@@ -1,0 +1,24 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-property-sort-order-smacss"],
+  "rules": {
+    "max-nesting-depth": 3,
+    "shorthand-property-no-redundant-values": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "length-zero-no-unit": true,
+    "color-hex-length": "short",
+    "color-hex-case": "lower",
+    "selector-max-id": 0,
+    "block-no-empty": null,
+    "no-descending-specificity": null,
+    "number-max-precision": null,
+    "function-url-quotes": null,
+    "no-duplicate-selectors": null,
+    "max-line-length": null,
+    "property-no-vendor-prefix": null,
+    "selector-attribute-quotes": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "value-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null
+  }
+}

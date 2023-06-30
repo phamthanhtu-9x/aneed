@@ -1,0 +1,33 @@
+@charset "utf-8"
+@use "variables" as *
+
+=desktop
+  @media print, (min-width: $sm-break + .02)
+    @content
+=desktop-ie
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    @content
+=desktop-edge
+  @supports (-ms-ime-align: auto)
+    @content
+=mobile
+  @media only screen and (max-width: $sm-break)
+    @content
+=mobile-xs
+  @media only screen and (max-width: $xs-break)
+    @content
+=text-wrap
+  word-break: break-word
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &::-ms-input-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::placeholder
+    @content
